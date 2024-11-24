@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: Lab-Week-05
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=works;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: sapassword
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        enable_lazy_load_no_trans: true
+        format_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true 
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    org.hibernate.SQL: debug 
+    org.hibernate.type.descriptor.sql.BasicBinder: trace

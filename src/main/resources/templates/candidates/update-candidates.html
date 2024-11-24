@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h2>Cập nhật Candidate</h2>
+<form th:action="@{/update}" method="post">
+  <h3>Thông tin</h3>
+  <div>
+    <input th:value="${candidate.canId}" type="text" name="canId" hidden="hidden" required>
+  </div>
+  <div>
+    <label for="fullName">Họ và tên: </label>
+    <input th:value="${candidate.fullName}" type="text" id="fullName" name="fullName" required>
+  </div>
+  <div>
+    <label for="phone">Số điện thoại: </label>
+    <input th:value="${candidate.phone}" type="text" id="phone" name="phone" required>
+  </div>
+
+  <div>
+    <label for="email">Email: </label>
+    <input th:value="${candidate.email}" type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="dob">Ngày sinh: </label>
+    <input th:value="${candidate.dob}" type="date" id="dob" name="dob" required>
+  </div>
+
+  <h3>Địa chỉ</h3>
+  <div>
+    <input th:value="${address.addId}" type="text" name="addId" hidden="hidden" required>
+  </div>
+  <div>
+    <label for="city">Thành phố: </label>
+    <input th:value="${address.city}" type="text" id="city" name="city" required>
+  </div>
+  <div>
+    <label for="number">Số đường: </label>
+    <input th:value="${address.number}" type="text" id="number" name="number" required>
+  </div>
+  <div>
+    <label for="zipcode">ZipCode: </label>
+    <input th:value="${address.zipcode}" type="text" id="zipcode" name="zipcode" required>
+  </div>
+  <div>
+    <label for="street">Đường: </label>
+    <input th:value="${address.street}" type="text" id="street" name="street" required>
+  </div>
+  <div>
+    <label for="country">Đất nước: </label>
+    <input th:value="${address.country}" type="text" id="country" name="country" required>
+  </div>
+
+  <button type="submit">Cập nhật</button>
+</form>
+</body>
+</html>
