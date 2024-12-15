@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chỉnh sửa CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-6">
+        <div class="max-w-2xl mx-auto bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                <h1 class="text-xl font-semibold text-gray-800">Chỉnh sửa CV</h1>
+            </div>
+            <form class="px-6 py-4 space-y-6">
+              
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Họ và tên</label>
+                        <input id="name" type="text" value="Bạch Cường" disabled class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" readonly>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input id="email" type="email" value="bachcuong27@gmail.com" disabled class="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500" readonly>
+                    </div>
+                </div>
+
+              
+                <div class="space-y-4">
+                    <div class="space-y-2">
+                        <label for="phone" class="block text-sm font-medium text-gray-700">Số điện thoại</label>
+                        <input id="phone" type="tel" placeholder="Nhập số điện thoại của bạn" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="address" class="block text-sm font-medium text-gray-700">Địa chỉ</label>
+                        <textarea id="address" placeholder="Nhập địa chỉ của bạn" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 min-h-[80px]"></textarea>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="skill-level" class="block text-sm font-medium text-gray-700">Skill level</label>
+                        <select id="skill-level" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                            <option value="" selected disabled>Chọn skill level</option>
+                            <option value="master">MASTER</option>
+                            <option value="beginner">BEGINNER</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="skills" class="block text-sm font-medium text-gray-700">Kỹ năng</label>
+                        <textarea id="skills" placeholder="Nhập các kỹ năng của bạn (VD: JavaScript, React, Node.js,...)" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 min-h-[120px]"></textarea>
+                    </div>
+                </div>
+
+                <div class="flex justify-end space-x-4">
+                    <button type="button" class="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Hủy</button>
+                    <button type="submit" class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Lưu thay đổi</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
